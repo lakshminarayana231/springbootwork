@@ -12,7 +12,7 @@ import com.mywork.services.weatherservice.validator.RequestValidator;
 import com.mywork.services.weatherservice.validator.WeatherServiceValidator;
 
 @SpringBootTest
-public class ValidatorTest {
+public class WeatherServiceValidatorTest {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	

@@ -2,12 +2,14 @@ package com.weather.model;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.weather.model.dateformatter.CustomDateSerializer;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class WeatherForecastDetails {
 
 	private HourlyForeCasts hourlyForecasts;
